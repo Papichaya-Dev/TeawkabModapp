@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "625245506903",
+    "firebase_url": "https://teawkabmod.firebaseio.com",
+    "project_id": "teawkabmod",
+    "storage_bucket": "teawkabmod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625245506903:android:a54964e4086bb0d0564212",
+        "android_client_info": {
+          "package_name": "com.tester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625245506903-n4vp4ei9u12mvkh05pcjrjcnbm0j5ke6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEEtKsGxErpCWGPaWZSVO6NIuFUsOmMQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625245506903-n4vp4ei9u12mvkh05pcjrjcnbm0j5ke6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
