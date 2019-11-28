@@ -11,13 +11,16 @@ import {
   Body,
   Right,
   Button,
+  Icon,
 } from 'native-base';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, ImageBackground} from 'react-native';
+import antlogo from '../images/anttrophy.jpg';
 export default class Achievement extends Component {
   render() {
     return (
       <Container>
         <Header style={{backgroundColor : 'darkred'}} />
+        <Icon ios="ios-trophy" android="md-trophy" style={styles.Iconheader} />
         <Text style={styles.logoText}> 𝐀𝐜𝐡𝐢𝐞𝐯𝐞𝐦𝐞𝐧𝐭</Text>
         <Content>
           <List>
@@ -67,6 +70,7 @@ export default class Achievement extends Component {
             </ListItem>
           </List>
         </Content>
+        <ImageBackground source={antlogo} style={styles.backgroundContainer} />
       </Container>
     );
   }
@@ -80,5 +84,18 @@ const styles = StyleSheet.create({
     top: 0,
     left: 120,
     fontWeight: 'bold',
+  },
+  backgroundContainer: {
+    flex: 1,
+    width: 430,
+    height: null,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  Iconheader: {
+    position: 'absolute',
+    top: 15,
+    left: 185,
+    color: 'white',
   },
 });

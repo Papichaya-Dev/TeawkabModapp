@@ -6,6 +6,7 @@ import Login from './src/containers/Login';
 import Home from './src/containers/Home';
 import Achievement from './src/containers/Achievement';
 import Tool from './src/containers/Tool';
+import Journey from './src/containers/Journey';
 const App = createStackNavigator({
   SplashPage: {
     screen: SplashPage,
@@ -41,6 +42,13 @@ const App = createStackNavigator({
   },
   Tool: {
     screen: Tool,
+    navigationOptions: {
+      header: null,
+      navigationOptions: {},
+    },
+  },
+  Journey: {
+    screen: Journey,
     navigationOptions: {
       header: null,
       navigationOptions: {},

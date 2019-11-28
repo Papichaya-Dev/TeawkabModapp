@@ -12,9 +12,13 @@ import {
   Right,
   Button,
   Icon,
+  TouchableOpacity,
+  FooterTab,
+  View,
 } from 'native-base';
-import {StyleSheet} from 'react-native';
-export default class Achievement extends Component {
+import toolpic from '../images/toolpic.jpg';
+import {StyleSheet, ImageBackground} from 'react-native';
+export default class Tool extends Component {
   render() {
     return (
       <Container>
@@ -24,7 +28,13 @@ export default class Achievement extends Component {
           android="md-list-box"
           style={styles.Iconheader}
         />
-        <Text style={styles.logoText}>𝐌𝐚𝐧𝐮𝐚𝐥</Text>
+        <ImageBackground source={toolpic} style={styles.backgroundContainer} />
+        <FooterTab style={styles.foot} />
+        <Text
+          onPress={() => this.props.navigation.navigate('Home')}
+          style={styles.buttontext}>
+          𝐁𝐚𝐜𝐤
+        </Text>
       </Container>
     );
   }
@@ -43,5 +53,37 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 15,
     left: 185,
+  },
+  backgroundContainer: {
+    flex: 1,
+    width: null,
+    height: 450,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  foot: {
+    backgroundColor: '#69CF7C',
+    width: 500,
+    height: 300,
+    top: 201,
+  },
+  buttontext: {
+    fontSize: 25,
+    color: 'white',
+    textAlign: 'center',
+    width: 250,
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    borderRadius: 25,
+    marginVertical: 20,
+    paddingVertical: 16,
+    top: 0,
+    left: 83
+  },
+  button: {
+    width: 250,
+    backgroundColor: 'rgba(0,0,0,0.3)',
+    borderRadius: 25,
+    marginVertical: 20,
+    paddingVertical: 16,
   },
 });

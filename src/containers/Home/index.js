@@ -71,11 +71,15 @@ export default class Home extends React.Component {
             </Button>
             <Button vertical active>
               <Icon active name="navigate" />
-              <Text style={styles.input} >𝐀𝐩𝐩</Text>
+              <Text style={styles.input} >𝐌𝐚𝐩</Text>
             </Button>
             <Button vertical>
             <Icon ios="ios-car" android="md-car" style={styles.inputIconn} />
-              <Text style={styles.input} >𝐉𝐨𝐮𝐫𝐧𝐞𝐲</Text>
+            <Text
+                onPress={() => this.props.navigation.navigate('Journey')}
+                style={styles.input}>
+                𝐉𝐨𝐮𝐫𝐧𝐞𝐲
+              </Text>
             </Button>
          </FooterTab>
        <Footer  style={{backgroundColor : '#F2F2FF'}}  /></Footer >
