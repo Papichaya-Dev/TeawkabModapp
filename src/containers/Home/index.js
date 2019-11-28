@@ -71,7 +71,8 @@ export default class Home extends React.Component {
             </Button>
             <Button vertical active>
               <Icon active name="navigate" />
-              <Text style={styles.input} >𝐌𝐚𝐩</Text>
+              <Text
+               onPress={() => this.props.navigation.navigate('Congrat')}style={styles.input} >𝐌𝐚𝐩</Text>
             </Button>
             <Button vertical>
             <Icon ios="ios-car" android="md-car" style={styles.inputIconn} />
